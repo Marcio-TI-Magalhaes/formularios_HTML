@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalhando com formulários</title>
+
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com formulários</h1>
+
+    <form action="cadastro.php" method="POST" autocomplete="off">
+        <p><label for="idnome">Nome:</label> 
+            <input type="text" name="nome" id="idnome"></p>
+        <p><label for="idsobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="idsobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+
+    <p>Quando usamos o método "GET" ao enviar os dados do formulário essas informações ficam na URL<br><br>
+        
+        Segue exemplo:<br><br>
+        
+        file:///C:/estudos/formularios_HTML/cadastro.php?nome=Marcio&sobrenome=Magalhaes</p>
+
+    <hr>
+    <p>Quando usamos o método "POST" ao enviar os dados do formulário conseguimos obter essas informações ao inspecionar a página na opção "Network" > cadastro.php > Payload</p>
+        
+
+</body>
+</html>
