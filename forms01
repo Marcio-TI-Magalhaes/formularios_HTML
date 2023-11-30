@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de fomulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="idusu">Usuário: </label>
+            <input type="text" name="idusu" id="idusu" required minlength="5" maxlength="15" placeholder="Nome do usuário"> 
+        </p>
+        <p>
+            <label for="idsenha">Senha: </label>
+            <input type="password" name="idsenha" id="idsenha" required minlength="8" maxlength="20" size="10" placeholder="Mínimo 8 letras">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
